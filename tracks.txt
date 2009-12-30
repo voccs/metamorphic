@@ -1,0 +1,8 @@
+Search content files for commented 'Ryan: ' token.
+
+Keyfixer
+https://addons.mozilla.org/en-US/firefox/addon/9796
+source of modified chrome/content/platformHTMLBindings.xml
+
+From TB3 proper
+source of modified chrome/locale/en-US/messenger.dtd
