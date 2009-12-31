@@ -27,7 +27,7 @@
     </em:file>
 
     <!-- Front End Integration Hooks (used by Extension Manager)-->
-    <em:description>A mix of personalization.</em:description>
+    <em:description>A mix of Ryan's personalization.</em:description>
     <em:creator>Ryan Lee (ryan@ryanlee.org)</em:creator>
 
     <em:type parseType="Integer">2</em:type> <!-- type=extension -->

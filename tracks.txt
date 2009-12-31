@@ -11,9 +11,3 @@ From TB 3.0 proper
 source of modified chrome/locale/en-US/messenger.dtd
 changes archive key to Y instead of A
 see refs/messenger.dtd for TB 3.0 original
-
-From TB 3.0 proper
-source of modified function in chrome/content/threadPane.js
-loaded via chrome/content/messenger.xul
-changes click on column header to sort descending first
-see refs/threadPane.js for TB 3.0 original
