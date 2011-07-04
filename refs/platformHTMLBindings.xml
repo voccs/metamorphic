@@ -86,6 +86,8 @@
       <handler event="keypress" keycode="VK_PAGE_DOWN" command="cmd_scrollPageDown"/>
       <handler event="keypress" keycode="VK_PAGE_UP" modifiers="shift" command="cmd_selectPageUp"/>
       <handler event="keypress" keycode="VK_PAGE_DOWN" modifiers="shift" command="cmd_selectPageDown"/>
+      <handler event="keypress" keycode="VK_PAGE_UP" modifiers="alt" command="cmd_movePageUp"/>
+      <handler event="keypress" keycode="VK_PAGE_DOWN" modifiers="alt" command="cmd_movePageDown"/>
 
       <handler event="keypress" keycode="VK_UP"   modifiers="accel" command="cmd_moveTop"/>
       <handler event="keypress" keycode="VK_DOWN" modifiers="accel" command="cmd_moveBottom"/>
@@ -121,22 +123,6 @@
 
   <binding id="browser">
     <handlers>
-      <handler event="draggesture">
-<!--
-         nsDragAndDrop.startDrag(event, contentAreaDNDObserver);
--->
-      </handler>
-      <handler event="dragover">
-<!--
-         nsDragAndDrop.dragOver(event, contentAreaDNDObserver);
--->
-      </handler>
-      <handler event="dragdrop">
-<!--
-         nsDragAndDrop.drop(event, contentAreaDNDObserver);
--->
-      </handler>
-
       <handler event="keypress" key=" " modifiers="shift" command="cmd_scrollPageUp" />
       <handler event="keypress" key=" " command="cmd_scrollPageDown" />
 
@@ -187,6 +173,7 @@
       <handler event="keypress" key="x" command="cmd_cut" modifiers="accel"/>
       <handler event="keypress" key="c" command="cmd_copy" modifiers="accel"/>
       <handler event="keypress" key="v" command="cmd_paste" modifiers="accel"/>
+      <handler event="keypress" key="v" command="cmd_pasteNoFormatting" modifiers="accel,shift"/>
       <handler event="keypress" key="a" command="cmd_selectAll" modifiers="accel"/>
       <handler event="keypress" keycode="VK_HOME" command="cmd_scrollTop" /> 
       <handler event="keypress" keycode="VK_END"  command="cmd_scrollBottom" /> 
@@ -197,6 +184,8 @@
       <handler event="keypress" keycode="VK_PAGE_DOWN" command="cmd_scrollPageDown"/>
       <handler event="keypress" keycode="VK_PAGE_UP" modifiers="shift" command="cmd_selectPageUp"/>
       <handler event="keypress" keycode="VK_PAGE_DOWN" modifiers="shift" command="cmd_selectPageDown"/>
+      <handler event="keypress" keycode="VK_PAGE_UP" modifiers="alt" command="cmd_movePageUp"/>
+      <handler event="keypress" keycode="VK_PAGE_DOWN" modifiers="alt" command="cmd_movePageDown"/>
 
       <handler event="keypress" keycode="VK_LEFT"  modifiers="alt" command="cmd_wordPrevious" /> 
       <handler event="keypress" keycode="VK_RIGHT" modifiers="alt" command="cmd_wordNext" /> 
@@ -229,6 +218,8 @@
       <handler event="keypress" key="u" modifiers="control" command="cmd_deleteToBeginningOfLine"/>
       <handler event="keypress" key="w" modifiers="control" command="cmd_deleteWordBackward"/>
       <handler event="keypress" key="v" modifiers="control" command="cmd_scrollPageDown"/>
+
+      <handler event="keypress" key="v" command="cmd_pasteNoFormatting" modifiers="accel,alt,shift"/>
     </handlers>
   </binding>
 

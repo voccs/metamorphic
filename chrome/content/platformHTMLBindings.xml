@@ -82,6 +82,8 @@
         command="cmd_selectLinePrevious"/>
     <handler event="keypress" keycode="VK_DOWN" modifiers="shift"
         command="cmd_selectLineNext"/>
+    <handler event="keypress" keycode="VK_PAGE_UP" modifiers="alt" command="cmd_movePageUp"/>
+    <handler event="keypress" keycode="VK_PAGE_DOWN" modifiers="alt" command="cmd_movePageDown"/>
 
     <!-- Cut/copy/paste/undo -->
     <handler event="keypress" key="c" modifiers="accel" command="cmd_copy"/>
@@ -139,22 +141,6 @@
 
   <binding id="browser">
     <handlers>
-      <handler event="draggesture">
-<!--
-         nsDragAndDrop.startDrag(event, contentAreaDNDObserver);
--->
-      </handler>
-      <handler event="dragover">
-<!--
-         nsDragAndDrop.dragOver(event, contentAreaDNDObserver);
--->
-      </handler>
-      <handler event="dragdrop">
-<!--
-         nsDragAndDrop.drop(event, contentAreaDNDObserver);
--->
-      </handler>
-
       <handler event="keypress" key=" " modifiers="shift" command="cmd_scrollPageUp" />
       <handler event="keypress" key=" " command="cmd_scrollPageDown" />
 
@@ -217,6 +203,7 @@
       <handler event="keypress" key="x" command="cmd_cut" modifiers="accel"/>
       <handler event="keypress" key="c" command="cmd_copy" modifiers="accel"/>
       <handler event="keypress" key="v" command="cmd_paste" modifiers="accel"/>
+      <handler event="keypress" key="v" command="cmd_pasteNoFormatting" modifiers="accel,shift"/>
       <handler event="keypress" key="a" command="cmd_selectAll" modifiers="accel"/>
 <!-- keyfixer: Insert Begin -->
       <handler event="keypress" keycode="VK_HOME"   modifiers="shift,accel" command="cmd_selectTop"/>
@@ -232,6 +219,8 @@
       <handler event="keypress" keycode="VK_PAGE_DOWN" command="cmd_movePageDown"/>
       <handler event="keypress" keycode="VK_PAGE_UP"   modifiers="shift" command="cmd_selectPageUp"/>
       <handler event="keypress" keycode="VK_PAGE_DOWN" modifiers="shift" command="cmd_selectPageDown"/>
+      <handler event="keypress" keycode="VK_PAGE_UP" modifiers="alt" command="cmd_movePageUp"/>
+      <handler event="keypress" keycode="VK_PAGE_DOWN" modifiers="alt" command="cmd_movePageDown"/>
 
 <!-- keyfixer: Insert End -->
       <handler event="keypress" keycode="VK_LEFT"  modifiers="alt" command="cmd_wordPrevious" /> 
@@ -265,6 +254,8 @@
       <handler event="keypress" key="u" modifiers="control" command="cmd_deleteToBeginningOfLine"/>
       <handler event="keypress" key="w" modifiers="control" command="cmd_deleteWordBackward"/>
       <handler event="keypress" key="v" modifiers="control" command="cmd_scrollPageDown"/>
+
+      <handler event="keypress" key="v" command="cmd_pasteNoFormatting" modifiers="accel,alt,shift"/>
     </handlers>
   </binding>
 
