@@ -22,10 +22,10 @@ See `refs/platformHTMLBindings_new_3.xml` for Keyfixer original
 Archive Key
 -----------
 
-In TB3.0, from `chrome/locale/en-US/messenger.dtd`, changes archive key
+In TB5.0, from `chrome/locale/en-US/messenger.dtd`, changes archive key
 to Y instead of A.
 
-See `refs/messenger.dtd` for TB 3.0 original
+See `refs/messenger.dtd` for TB 5.0 original
 
 [1]: https://addons.mozilla.org/thunderbird/addon/sortpref/
 [2]: https://addons.mozilla.org/thunderbird/addon/keyfixer/
