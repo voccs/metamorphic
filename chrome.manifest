@@ -1,6 +1,5 @@
 content	metamorphic	jar:chrome/metamorphic.jar!/content/
 
 override	chrome://global/content/platformHTMLBindings.xml	chrome://metamorphic/content/platformHTMLBindings.xml
-override	chrome://messenger/locale/messenger.dtd			chrome://metamorphic/locale/messenger.dtd
 
 locale	metamorphic	en-US	jar:chrome/metamorphic.jar!/locale/en-US/
